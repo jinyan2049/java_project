@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER www.ctnrs.com
+MAINTAINER jerry.jin
 
 ENV VERSION=8.5.43
 
