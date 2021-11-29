@@ -12,11 +12,15 @@ else
 rm -rf /home/tools && mkdir -p /home/tools
 fi
 
-cd /home/tools && curl -v -j -k -L -H "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm > jdk-8u131-linux-x64.rpm
+sleep 1
+
+yum -y install wget
+
+cd /home/tools && wget -c https://repo.huaweicloud.com/java/jdk/8u202-b08/jdk-8u202-linux-x64.rpm
 
 
 if [ $? -eq 0 ];then
-rpm -ivh jdk-8u131-linux-x64.rpm
+rpm -ivh jdk-8u202-linux-x64.rpm
 else
 exit 1
 fi
