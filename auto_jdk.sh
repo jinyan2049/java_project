@@ -1,4 +1,5 @@
 #!/bin/bash
+# written by jerry
 if [ `whoami` != root ]
 then
 echo "Please login as root to continue :)"
