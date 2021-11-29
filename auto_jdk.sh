@@ -15,7 +15,7 @@ cd /home/tools && curl -v -j -k -L -H "Cookie: oraclelicense=accept-securebackup
 
 
 if [ $? -eq 0 ];then
-rpm -ivh jdk-8u301-linux-x64.rpm
+rpm -ivh jdk-8u131-linux-x64.rpm
 else
 exit 1
 fi
